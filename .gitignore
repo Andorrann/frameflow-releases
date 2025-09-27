@@ -1,0 +1,39 @@
+# Frameflow Releases Repository - .gitignore
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs
+*.log
+
+# Archives (except official releases)
+*.zip
+*.rar
+*.7z
+
+# Development files (should not be in releases repo)
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Note: Frameflow_Setup.exe files are intentionally tracked
+# as they are the main deliverables of this repository

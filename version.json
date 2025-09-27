@@ -1,0 +1,46 @@
+{
+  "version": "1.8.1",
+  "version_name": "Beta",
+  "build": "20250925",
+  "release_date": "2025-09-25",
+  "download_url": "https://github.com/andorrann/frameflow-releases/releases/download/v1.8.1/Frameflow_Setup.exe",
+  "changelog_url": "https://github.com/andorrann/frameflow-releases/releases/tag/v1.8.1",
+  "file_size": 89654321,
+  "sha256": "TO_BE_CALCULATED_AFTER_BUILD",
+  "minimum_version": "1.7.0",
+  "critical_update": false,
+  "auto_update_enabled": true,
+  "inno_silent_args": [
+    "/SILENT",
+    "/CLOSEAPPLICATIONS", 
+    "/RESTARTAPPLICATIONS",
+    "/NOCANCEL",
+    "/NORESTART"
+  ],
+  "system_requirements": {
+    "os": "Windows 10/11",
+    "architecture": "x64",
+    "ram_mb": 4096,
+    "disk_mb": 200
+  },
+  "features": [
+    "Système de diagnostic complet avec export logs",
+    "Correction bugs changement de thème",
+    "Préparation système de mise à jour automatique",
+    "Interface utilisateur améliorée",
+    "Stabilité générale renforcée"
+  ],
+  "fixes": [
+    "Correction changement de thème (liste des étapes)",
+    "Styles CSS complets pour thème clair",
+    "Mise à jour forcée de tous les widgets",
+    "Gestion d'erreurs améliorée",
+    "Performance optimisée"
+  ],
+  "breaking_changes": [],
+  "deprecations": [],
+  "security_updates": [
+    "Validation des domaines pour les mises à jour",
+    "Vérification intégrité des fichiers téléchargés"
+  ]
+}
