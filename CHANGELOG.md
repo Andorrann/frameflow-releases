@@ -1,140 +1,164 @@
-# 📋 Frameflow - Changelog
-
-All notable changes to Frameflow will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
-
-### Planned
-- Système de mise à jour automatique complet
-- Support multi-langues (FR/EN)
-- Templates de tutoriels prédéfinis
-- Export vers autres formats (PDF, HTML)
+# 📋 Frameflow Changelog
 
 ---
 
-## [1.8.1] - 2025-09-25
+## [1.8.2] - 2025-09-28
 
 ### 🆕 Added
-- **Système de diagnostic complet** avec export des logs et informations système
-- **Menu Help → Diagnostic Information** pour le support technique
-- **Export diagnostic** en fichier texte ou archive ZIP
-- **Préparation système de mise à jour** automatique
-- **Validation sécurisée** des domaines et fichiers
-
-### 🐛 Fixed
-- **Correction majeure changement de thème** - tous les éléments UI se mettent à jour
-- **Liste des étapes** reste maintenant cohérente lors du changement de thème
-- **Styles CSS complets** pour le thème clair avec couleurs explicites
-- **Mise à jour forcée** de tous les widgets lors du changement de thème
-- **Gestion d'erreurs** améliorée dans tous les composants
+- **Automatic update system** with GitHub Releases integration
+- **Help → Check for Updates** menu for manual update checking
+- **Automatic update check** at application startup (5-second delay)
+- **Smart version comparison** supporting semantic versioning
+- **Update notification dialogs** with changelog preview
+- **Background update checking** using separate threads
+- **Direct download links** to latest installer from GitHub
 
 ### ⚡ Improved
-- **Performance générale** optimisée
-- **Interface utilisateur** plus fluide et réactive
-- **Stabilité** renforcée dans tous les modules
-- **Documentation** technique complète
-- **Architecture** préparée pour les futures fonctionnalités
+- **Enhanced build system** with `requests` library integration
+- **Professional update workflow** with user-friendly notifications
+- **Non-intrusive startup checks** with configurable delays
+- **Error handling** for network connectivity issues
+- **Logging system** for update check activities
 
 ### 🔧 Technical
-- Refactoring du système de thèmes
-- Amélioration de la gestion des erreurs
-- Optimisation du code de l'interface utilisateur
-- Préparation de l'infrastructure de mise à jour
+- Added `UpdateService` and `UpdateChecker` classes
+- Integrated GitHub API for release information
+- Added `requests>=2.28.0` dependency
+- Updated PyInstaller configuration for new dependencies
+- Enhanced error handling and logging for update operations
+
+---
+
+## [1.8.1] - 2025-09-27
+
+### 🆕 Added
+- **Complete diagnostic system** with system info export for technical support
+- **Help → Diagnostic Information** menu for troubleshooting
+- **Export diagnostic data** as text file or ZIP archive
+- **Auto-update system preparation** with GitHub Releases integration
+- **Professional build system** with organized scripts and clear structure
+- **Automated installer creation** with Inno Setup integration
+
+### 🐛 Fixed
+- **Major theme switching bug** - all UI elements now update correctly
+- **Step list consistency** during theme changes
+- **Complete CSS styles** for light theme with explicit colors
+- **Forced widget updates** during theme switching
+- **Error handling** improvements across all components
+- **Icon path issues** in build system (now uses correct `logo_exe.ico`)
+
+### ⚡ Improved
+- **Build system reorganization** - scripts moved to `scripts_build/` directory
+- **Clear output directories** - `executable/` and `installer/` instead of `dist/`
+- **Menu-driven build process** with options for different build types
+- **Professional installer** with proper English localization
+- **Enhanced stability** across all modules
+- **Performance optimizations** throughout the application
+- **Better error messages** and user feedback
+
+### 🔧 Technical
+- Refactored theme system architecture
+- Enhanced error handling and logging
+- Optimized UI component updates
+- Prepared infrastructure for automatic updates
+- Improved build scripts organization
+- Updated Inno Setup configuration
 
 ---
 
 ## [1.8.0] - 2025-09-20
 
 ### 🆕 Added
-- **Génération Markdown complètement redessinée** avec format amélioré
-- **Générateur markdown centralisé** avec structure hiérarchique
-- **Format professionnel** compatible Wiki.js
-- **Listes numérotées automatiques** (1. 2. 3.) pour les descriptions d'étapes
-- **Mode fenêtre maximisée** automatique pour l'éditeur d'images
+- **Redesigned Markdown generation** with improved professional format
+- **Centralized markdown generator** with hierarchical structure
+- **Professional format** compatible with Wiki.js
+- **Automatic numbered lists** (1. 2. 3.) for step descriptions
+- **Auto-maximize mode** for image editor window
 
 ### 🐛 Fixed
-- **Ordre des boutons** corrigé dans l'éditeur d'images
-- **Système de coordonnées** fiabilisé avec coordonnées normalisées
-- **Couleur du label mode de capture** s'adapte maintenant au thème
+- **Button order** corrected in image editor (Cancel → Validate)
+- **Coordinate system** reliability with normalized coordinates
+- **Capture mode label** color now adapts to theme
 
 ### ⚡ Improved
-- **Format de tutoriel** professionnel respectant les standards Wiki.js
-- **Maximisation de fenêtre** robuste avec géométrie de secours
-- **Placeholder des descriptions** amélioré avec explication des listes numérotées
+- **Professional tutorial format** following Wiki.js standards
+- **Robust window maximization** with fallback geometry
+- **Enhanced step descriptions** with numbered list placeholders
 
 ### 🧹 Maintenance
-- **Nettoyage** des fichiers de développement/test
-- **Structure projet** plus propre et organisée
+- Cleaned up development/test files
+- Organized project structure
 
 ---
 
 ## [1.7.0] - 2025-09-15
 
 ### 🆕 Added
-- **Architecture MVC moderne** avec adaptateurs
-- **Gestion des zones d'effets** refactorisée et simplifiée
-- **Système de métadonnées** JSON robuste
-- **Drag & drop des étapes** avec réorganisation visuelle
-- **Menu contextuel** complet pour la gestion des étapes
+- **Modern MVC architecture** with adapters
+- **Refactored effect zones management** - simplified and streamlined
+- **Robust JSON metadata system**
+- **Drag & drop step reordering** with visual feedback
+- **Complete context menu** for step management
 
 ### ⚡ Improved
-- **Interface utilisateur** moderne avec PyQt6
-- **Persistance des tutoriels** en cours
-- **Performance** générale optimisée
+- **Modern PyQt6 interface**
+- **Tutorial persistence** for work in progress
+- **Overall performance** optimizations
 
 ---
 
 ## [1.6.0] - 2025-09-10
 
 ### 🆕 Added
-- **Capture automatique/manuelle** avec raccourci F9
-- **Détection et sélection de fenêtres** avec thumbnails
-- **Édition d'images** (flou, surbrillance)
-- **Génération automatique** de markdown
-- **Support thèmes** sombre/clair
+- **Automatic/manual screenshot capture** with F9 hotkey
+- **Window detection and selection** with thumbnail previews
+- **Image editing tools** (blur, highlight)
+- **Automatic markdown generation**
+- **Dark/Light theme support**
 
 ### 🐛 Fixed
-- Stabilité générale améliorée
-- Gestion mémoire optimisée
+- General stability improvements
+- Memory management optimizations
 
 ---
 
 ## [1.5.0] - 2025-09-05
 
 ### 🆕 Added
-- Interface PyQt6 moderne
-- Système de capture d'écran de base
-- Export markdown basique
+- Modern PyQt6 interface
+- Basic screenshot capture system
+- Basic markdown export
 
 ---
 
-## Version Numbering
+## 📝 Version Numbering
 
-Frameflow utilise le [Semantic Versioning](https://semver.org/) :
+Frameflow uses [Semantic Versioning](https://semver.org/):
 
-- **MAJOR** (X.0.0) : Changements incompatibles avec les versions précédentes
-- **MINOR** (0.X.0) : Nouvelles fonctionnalités compatibles
-- **PATCH** (0.0.X) : Corrections de bugs compatibles
+- **MAJOR** (X.0.0): Breaking changes
+- **MINOR** (0.X.0): New features (backward compatible)
+- **PATCH** (0.0.X): Bug fixes (backward compatible)
 
 ### Version Tags
-- **Alpha** : Version de développement interne
-- **Beta** : Version de test public
-- **RC** : Release Candidate (pré-release)
-- **Stable** : Version de production
+- **Alpha**: Internal development version
+- **Beta**: Public testing version
+- **RC**: Release Candidate (pre-release)
+- **Stable**: Production version
 
 ---
 
-## Support
+## 🐛 Reporting Issues
 
-Pour signaler un bug ou demander une fonctionnalité :
-1. Utilisez **Help → Diagnostic Information** pour exporter les informations système
-2. Créez un rapport détaillé avec les étapes de reproduction
-3. Incluez votre version de Frameflow et Windows
+To report bugs or request features:
+
+1. Use **Help → Diagnostic Information** to export system info
+2. Create a detailed report with reproduction steps
+3. Include your Frameflow version and Windows version
+4. Attach diagnostic export if applicable
 
 ---
 
-**Frameflow** - Professional Tutorial Creator
-Développé avec ❤️ par Andorrann
+## 🏢 About
+
+**Frameflow** - Tutorial Creator  
+Developed with ❤️ by Andorrann

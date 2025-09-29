@@ -1,20 +1,14 @@
-# 🎬 Frameflow - Professional Tutorial Creator
+# 🎬 Frameflow - Tutorial Creator with markdown generation
 
 [![Version](https://img.shields.io/github/v/release/andorrann/frameflow-releases)](https://github.com/andorrann/frameflow-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/andorrann/frameflow-releases/total)](https://github.com/andorrann/frameflow-releases/releases)
 [![License](https://img.shields.io/badge/license-Proprietary-blue)](LICENSE)
 
-Professional desktop application for creating screenshot-based tutorials with automatic markdown generation for Wiki.js.
+Desktop application for creating screenshot-based tutorials with automatic markdown generation
 
 ## 📥 Download
 
 **[⬇️ Download Latest Version](https://github.com/andorrann/frameflow-releases/releases/latest)**
-
-### System Requirements
-- **OS**: Windows 10/11 (64-bit)
-- **RAM**: 4GB minimum, 8GB recommended
-- **Storage**: 200MB free space
-- **Display**: 1920x1080 minimum resolution
 
 ## ✨ Features
 
@@ -75,16 +69,11 @@ Frameflow includes an automatic update system:
    - Steps to reproduce
    - Diagnostic export (if applicable)
 
-### Common Issues
-- **Antivirus blocking**: Add Frameflow to exclusions
-- **Capture not working**: Run as administrator
-- **Window not detected**: Ensure target window is visible
-
 ## 📊 Version History
 
 See [Releases](https://github.com/andorrann/frameflow-releases/releases) for detailed changelog.
 
-### Latest Features (v1.8.1)
+### Latest Features (v1.8.2)
 - ✅ Complete diagnostic system
 - ✅ Theme switching fixes
 - ✅ Auto-update preparation
@@ -96,8 +85,6 @@ Frameflow is proprietary software. All rights reserved.
 
 ## 🏢 Developer
 
-Developed by **Andorrann** - Professional software solutions.
+Developed by **Andorrann**
 
 ---
-
-**Made with ❤️ for creating better documentation**

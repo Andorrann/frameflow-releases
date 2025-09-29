@@ -35,5 +35,9 @@ desktop.ini
 *.swp
 *.swo
 
+# Project-specific files
+instruction
+version
+
 # Note: Frameflow_Setup.exe files are intentionally tracked
 # as they are the main deliverables of this repository
