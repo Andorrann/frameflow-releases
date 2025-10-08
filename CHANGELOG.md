@@ -2,132 +2,112 @@
 
 ---
 
+## [1.8.3-3] - 2025-10-07
+
+### ✨ Features
+- **Modern UI Theme System** - Complete light/dark theme implementation with soft colors
+- **Improved Step Visualization** - Steps now feature blue accent bars for better separation
+- **Adaptive Borders** - Ultra-discrete borders that adapt to the selected theme
+- **Undo/Redo in Image Editor** - Full undo/redo support with keyboard shortcuts (Ctrl+Z / Ctrl+Y)
+- **Zone Re-editing** - Edit zones multiple times before tutorial finalization without displacement
+
+### 🐛 Fixed
+- **Theme Application** - Theme now correctly applies on startup
+- **Dark Theme Borders** - Fixed overly bright borders in dark mode
+- **Zone Displacement Bug** - Zones no longer shift when reopening the image editor
+
+### 🔄 Rework
+- **UI Spacing & Layout** - Optimized component spacing for better visual hierarchy
+- **Step List Design** - Redesigned step items with modern styling and hover effects
+- **Image Editor Controls** - Modern undo/redo buttons with visual feedback
+
+---
+
+## [1.8.3-2] - 2025-10-06 (Hotfix)
+
+### 🆕 Added
+- **Integrated changelog** - Recent updates now displayed directly in "Check for Updates" dialog
+- **Smart display** - Shows last 3 versions automatically with proper styling
+
+### ♻️ Changed
+- **Removed standalone changelog menu** - Changelog now integrated with update checker for cleaner UX
+
+---
+
+## [1.8.3-1] - 2025-10-06 (Hotfix)
+
+### 🐛 Fixed
+- **Fixed blur/highlight/crop zones shifting** when reopening image editor or finalizing tutorial
+- **Added changelog viewer** in Help menu for easy access to release notes
+
+---
+
+## [1.8.3] - 2025-09-29
+
+### 🌐 Added
+- **Wiki.js integration** - Publish tutorials directly to your Wiki.js instance
+- **Automatic image upload** with seamless link replacement
+- **One-click publishing** from tutorial completion dialog
+
+---
+
 ## [1.8.2] - 2025-09-28
 
 ### 🆕 Added
-- **Automatic update system** with GitHub Releases integration
-- **Help → Check for Updates** menu for manual update checking
-- **Automatic update check** at application startup (5-second delay)
-- **Smart version comparison** supporting semantic versioning
-- **Update notification dialogs** with changelog preview
-- **Background update checking** using separate threads
-- **Direct download links** to latest installer from GitHub
-
-### ⚡ Improved
-- **Enhanced build system** with `requests` library integration
-- **Professional update workflow** with user-friendly notifications
-- **Non-intrusive startup checks** with configurable delays
-- **Error handling** for network connectivity issues
-- **Logging system** for update check activities
-
-### 🔧 Technical
-- Added `UpdateService` and `UpdateChecker` classes
-- Integrated GitHub API for release information
-- Added `requests>=2.28.0` dependency
-- Updated PyInstaller configuration for new dependencies
-- Enhanced error handling and logging for update operations
+- **Automatic update system** - Check for new versions from Help menu
+- **Auto-update check** at startup with notifications
+- **Direct download links** to latest installer
 
 ---
 
 ## [1.8.1] - 2025-09-27
 
 ### 🆕 Added
-- **Complete diagnostic system** with system info export for technical support
-- **Help → Diagnostic Information** menu for troubleshooting
-- **Export diagnostic data** as text file or ZIP archive
-- **Auto-update system preparation** with GitHub Releases integration
-- **Professional build system** with organized scripts and clear structure
-- **Automated installer creation** with Inno Setup integration
+- **Diagnostic system** - Export system info for troubleshooting (Help menu)
 
 ### 🐛 Fixed
-- **Major theme switching bug** - all UI elements now update correctly
-- **Step list consistency** during theme changes
-- **Complete CSS styles** for light theme with explicit colors
-- **Forced widget updates** during theme switching
-- **Error handling** improvements across all components
-- **Icon path issues** in build system (now uses correct `logo_exe.ico`)
-
-### ⚡ Improved
-- **Build system reorganization** - scripts moved to `scripts_build/` directory
-- **Clear output directories** - `executable/` and `installer/` instead of `dist/`
-- **Menu-driven build process** with options for different build types
-- **Professional installer** with proper English localization
-- **Enhanced stability** across all modules
-- **Performance optimizations** throughout the application
-- **Better error messages** and user feedback
-
-### 🔧 Technical
-- Refactored theme system architecture
-- Enhanced error handling and logging
-- Optimized UI component updates
-- Prepared infrastructure for automatic updates
-- Improved build scripts organization
-- Updated Inno Setup configuration
+- **Theme switching bug** - All UI elements now update correctly when changing themes
 
 ---
 
 ## [1.8.0] - 2025-09-20
 
 ### 🆕 Added
-- **Redesigned Markdown generation** with improved professional format
-- **Centralized markdown generator** with hierarchical structure
-- **Professional format** compatible with Wiki.js
-- **Automatic numbered lists** (1. 2. 3.) for step descriptions
+- **Improved Markdown generation** with professional format compatible with Wiki.js
 - **Auto-maximize mode** for image editor window
 
 ### 🐛 Fixed
-- **Button order** corrected in image editor (Cancel → Validate)
-- **Coordinate system** reliability with normalized coordinates
-- **Capture mode label** color now adapts to theme
-
-### ⚡ Improved
-- **Professional tutorial format** following Wiki.js standards
-- **Robust window maximization** with fallback geometry
-- **Enhanced step descriptions** with numbered list placeholders
-
-### 🧹 Maintenance
-- Cleaned up development/test files
-- Organized project structure
+- **Button order** in image editor (Cancel → Validate)
+- **Capture mode label** color adaptation to theme
 
 ---
 
 ## [1.7.0] - 2025-09-15
 
 ### 🆕 Added
-- **Modern MVC architecture** with adapters
-- **Refactored effect zones management** - simplified and streamlined
-- **Robust JSON metadata system**
 - **Drag & drop step reordering** with visual feedback
-- **Complete context menu** for step management
-
-### ⚡ Improved
-- **Modern PyQt6 interface**
-- **Tutorial persistence** for work in progress
-- **Overall performance** optimizations
+- **Context menu** for step management
+- **Tutorial persistence** - Save and resume work in progress
 
 ---
 
 ## [1.6.0] - 2025-09-10
 
 ### 🆕 Added
-- **Automatic/manual screenshot capture** with F9 hotkey
-- **Window detection and selection** with thumbnail previews
-- **Image editing tools** (blur, highlight)
-- **Automatic markdown generation**
-- **Dark/Light theme support**
-
-### 🐛 Fixed
-- General stability improvements
-- Memory management optimizations
+- **Screenshot capture** with F9 hotkey (automatic/manual modes)
+- **Window selection** with thumbnail previews
+- **Image editing tools** - Blur and highlight areas
+- **Markdown generation** for tutorials
+- **Dark/Light theme** support
 
 ---
 
 ## [1.5.0] - 2025-09-05
 
 ### 🆕 Added
-- Modern PyQt6 interface
-- Basic screenshot capture system
-- Basic markdown export
+- Initial release with PyQt6 interface
+- Screenshot capture
+- Markdown export
 
 ---
 
@@ -160,5 +140,7 @@ To report bugs or request features:
 
 ## 🏢 About
 
-**Frameflow** - Tutorial Creator  
+**Frameflow** - Professional Tutorial Creator  
 Developed with ❤️ by Andorrann
+
+Create professional screenshot-based tutorials with automatic markdown generation for Wiki.js and other documentation platforms.
