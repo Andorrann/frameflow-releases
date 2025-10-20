@@ -1,113 +1,143 @@
 # 📋 Frameflow Changelog
 
+All notable changes to Frameflow will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [1.8.4] - 2025-10-19
+
+### 🐛 Bug Fixes
+- **Fixed:** Screenshots are no longer lost when closing the application  
+- **Fixed:** Tutorial recovery now works correctly after unexpected app closure  
+- **Fixed:** Work folder is properly preserved for incomplete tutorials  
+- **Fixed:** Watermark now applying correctly to images
+
+### 🔧 Improvements
+- Tutorials are now **automatically saved after every change**  
+- Users can now **load previously created tutorials** directly within the software  
+- Enhanced stability for tutorial save/load operations  
+- Better error handling during tutorial finalization  
+
+
+---
+
+## [1.8.3-5] - 2025-10-15
+
+### ✨ Features
+- **Watermark Size Control** - Added slider to adjust watermark size (10% to 200%)
+- **Structured Logging System** - Centralized logging with diagnostic export and automatic rotation
+
+### 🐛 Fixed
+- **Python DLL Error** - Fixed "Failed to load Python DLL" on Windows installation
+- **Update Dialogs Dark Theme** - All update dialogs now support dark theme
+- **WikiJS Integration Dialog** - Dark theme support
+- **Step Deletion Crash** - Fixed undefined error when deleting steps
+- **Watermark Position Drift** - Fixed watermark not returning to original position when resizing
+
+---
+
+## [1.8.3-4] - 2025-10-11
+
+### ✨ Features
+- **Wiki.js Publication Dialog** - Modern interface to publish tutorials directly to Wiki.js
+- **Wiki.js Progress Dialog** - Real-time publication progress with visual feedback
+- **Tutorial Persistence** - Tutorial stays loaded after finalization
+- **Watermark System** - Add custom watermarks with position and opacity controls
+
+### 🐛 Fixed
+- **Watermark Persistence** - Settings now saved when editing images
+- **Tutorial Reset** - No longer auto-resets after finalization
+- **Wiki.js Image Upload** - Fixed markdown image URLs
+
+
 ---
 
 ## [1.8.3-3] - 2025-10-07
 
 ### ✨ Features
-- **Modern UI Theme System** - Complete light/dark theme implementation with soft colors
-- **Improved Step Visualization** - Steps now feature blue accent bars for better separation
-- **Adaptive Borders** - Ultra-discrete borders that adapt to the selected theme
-- **Undo/Redo in Image Editor** - Full undo/redo support with keyboard shortcuts (Ctrl+Z / Ctrl+Y)
-- **Zone Re-editing** - Edit zones multiple times before tutorial finalization without displacement
+- **Modern UI Theme System** - Complete light/dark theme implementation
+- **Undo/Redo in Image Editor** - Full undo/redo support (Ctrl+Z / Ctrl+Y)
 
 ### 🐛 Fixed
-- **Theme Application** - Theme now correctly applies on startup
-- **Dark Theme Borders** - Fixed overly bright borders in dark mode
 - **Zone Displacement Bug** - Zones no longer shift when reopening the image editor
 
-### 🔄 Rework
-- **UI Spacing & Layout** - Optimized component spacing for better visual hierarchy
-- **Step List Design** - Redesigned step items with modern styling and hover effects
-- **Image Editor Controls** - Modern undo/redo buttons with visual feedback
+---
+
+## [1.8.3-2] - 2025-10-06
+
+### ✨ Features
+- **Integrated changelog** - Recent updates displayed in "Check for Updates" dialog
 
 ---
 
-## [1.8.3-2] - 2025-10-06 (Hotfix)
-
-### 🆕 Added
-- **Integrated changelog** - Recent updates now displayed directly in "Check for Updates" dialog
-- **Smart display** - Shows last 3 versions automatically with proper styling
-
-### ♻️ Changed
-- **Removed standalone changelog menu** - Changelog now integrated with update checker for cleaner UX
-
----
-
-## [1.8.3-1] - 2025-10-06 (Hotfix)
+## [1.8.3-1] - 2025-10-06
 
 ### 🐛 Fixed
-- **Fixed blur/highlight/crop zones shifting** when reopening image editor or finalizing tutorial
-- **Added changelog viewer** in Help menu for easy access to release notes
+- **Zones shifting** - Fixed blur/highlight/crop zones when reopening editor
 
 ---
 
 ## [1.8.3] - 2025-09-29
 
-### 🌐 Added
+### ✨ Features
 - **Wiki.js integration** - Publish tutorials directly to your Wiki.js instance
-- **Automatic image upload** with seamless link replacement
-- **One-click publishing** from tutorial completion dialog
 
 ---
 
 ## [1.8.2] - 2025-09-28
 
-### 🆕 Added
-- **Automatic update system** - Check for new versions from Help menu
-- **Auto-update check** at startup with notifications
-- **Direct download links** to latest installer
+### ✨ Features
+- **Automatic update system** - Check for new versions with notifications
 
 ---
 
 ## [1.8.1] - 2025-09-27
 
-### 🆕 Added
-- **Diagnostic system** - Export system info for troubleshooting (Help menu)
+### ✨ Features
+- **Diagnostic system** - Export system info for troubleshooting
 
 ### 🐛 Fixed
-- **Theme switching bug** - All UI elements now update correctly when changing themes
+- **Theme switching bug** - Fixed UI elements update when changing themes
 
 ---
 
 ## [1.8.0] - 2025-09-20
 
-### 🆕 Added
-- **Improved Markdown generation** with professional format compatible with Wiki.js
-- **Auto-maximize mode** for image editor window
+### ✨ Features
+- **Improved Markdown generation** - Professional format for Wiki.js
+- **Auto-maximize mode** for image editor
 
 ### 🐛 Fixed
-- **Button order** in image editor (Cancel → Validate)
-- **Capture mode label** color adaptation to theme
+- **Button order** in image editor
+- **Capture mode label** color adaptation
 
 ---
 
 ## [1.7.0] - 2025-09-15
 
-### 🆕 Added
+### ✨ Features
 - **Drag & drop step reordering** with visual feedback
-- **Context menu** for step management
-- **Tutorial persistence** - Save and resume work in progress
+- **Tutorial persistence** - Save and resume work
 
 ---
 
 ## [1.6.0] - 2025-09-10
 
-### 🆕 Added
-- **Screenshot capture** with F9 hotkey (automatic/manual modes)
-- **Window selection** with thumbnail previews
-- **Image editing tools** - Blur and highlight areas
-- **Markdown generation** for tutorials
+### ✨ Features
+- **Screenshot capture** with F9 hotkey
+- **Window selection** with thumbnails
+- **Image editing tools** - Blur and highlight
 - **Dark/Light theme** support
 
 ---
 
 ## [1.5.0] - 2025-09-05
 
-### 🆕 Added
-- Initial release with PyQt6 interface
-- Screenshot capture
-- Markdown export
+### ✨ Features
+- Initial release with PyQt6
 
 ---
 
