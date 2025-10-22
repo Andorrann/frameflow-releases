@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.8.4-1] - 2025-10-22
+
+### ✨ Features
+- **Markdown Editor (in-app):** A built-in, split-view Markdown Editor is now available to preview and modify the generated tutorial Markdown directly within the application.
+  - Live preview styled like WikiJS (theme-aware: light/dark)
+  - Toolbar for common formatting (headers, bold/italic/code, lists)
+  - Support for task lists and WikiJS special notes (info/success/warning/danger)
+  - Image path resolution so tutorial images render in the preview
+  - Changes are saved and used during tutorial finalization
+
+---
+
 ## [1.8.4] - 2025-10-19
 
 ### 🐛 Bug Fixes
