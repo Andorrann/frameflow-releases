@@ -17,6 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Image path resolution so tutorial images render in the preview
   - Changes are saved and used during tutorial finalization
 
+### 🐛 Fixed
+- **"Failed to load Python DLL" error:** Fixed first-launch DLL loading error by using permanent runtime directory instead of temporary folder
+  - Runtime files now extracted to `%LOCALAPPDATA%\Frameflow\Runtime` (persistent)
+  - Disabled UPX compression to reduce antivirus false positives
+  - Added runtime directory check on startup
+  - See [Troubleshooting Guide](docs/TROUBLESHOOTING_DLL_ERROR.md) for details
+
 ---
 
 ## [1.8.4] - 2025-10-19
