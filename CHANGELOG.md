@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.8.4-2] - 2025-10-31
+
+### 🔒 Security
+- **Secure Pixelation** - Replaced reversible blur with irreversible pixelation for sensitive data protection
+  - Default obfuscation mode changed from blur to pixelation
+  - Original pixel data permanently destroyed (cannot be recovered)
+  - Configurable block size (5-50 pixels, default: 20)
+
+### ✨ Features
+- **Full Screen Capture** - Added "Full Screen Capture" option as first choice in window selector
+  - Captures entire primary monitor
+  - Solves Windows menu and system UI capture issues
+
+### 🐛 Fixed
+- **Image path after finalization** - Fixed "file not found" error when editing images after tutorial finalization
+- **Zone cleanup** - Editing zones automatically cleared after finalization to prevent outdated/shifted overlays
+
+---
+
+
 ## [1.8.4-1] - 2025-10-22
 
 ### ✨ Features
