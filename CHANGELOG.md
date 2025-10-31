@@ -28,6 +28,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - BitBlt fallback when PrintWindow fails
 - **Update dialog buttons** - Reduced button height to prevent cutoff at bottom of dialog
 - **Download progress bar** - White text color for better readability on blue background
+- **First launch** - App restarts automatically on first launch (fixes DLL error)
+- **Window capture** - Improved activation and capture for stubborn apps (Bitwarden, Deezer, Slack)
+- **Blur/highlight zones** - Fixed zones appearing in wrong locations after crop
+- **Tutorial re-finalization** - Prevents error when clicking "Finish Tutorial" multiple times
+
+### ✨ New
+- **Original images preserved** - Keep originals after finalization for re-editing later
+- **Tutorial deletion** - Delete tutorials directly from load dialog with confirmation
+- **Better interface** - Cleaner load dialog with readable dates and recent tutorials first
+
 
 ---
 
