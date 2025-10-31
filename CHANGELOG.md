@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.8.4-3] - 2025-10-31
+
+### 🐛 Fixed
+- **First launch DLL error** - Automatic restart on first launch to prevent "Failed to load Python DLL" error
+  - New launcher detects temporary extraction and restarts automatically
+  - Transparent for users (~1-2 second delay on first launch)
+- **Window activation for capture** - Forced Win32 activation for stubborn apps
+  - Fixes Bitwarden, Deezer, ChatGPT, Slack not activating before capture
+  - Thread input attachment method bypasses Windows restrictions
+  - Restores minimized windows with SW_SHOWNORMAL (more reliable)
+  - Extra wait time (1 second) for minimized window animations
+  - Multiple restoration attempts if first method fails
+- **Window capture accuracy** - Win32 API now used to get precise window dimensions
+  - Fixes incorrect capture size for some apps (Bitwarden, Electron apps)
+  - More reliable than pygetwindow coordinates
+- **Window preview system** - Modern placeholder for apps that block capture
+  - Removed fluorescent colors, replaced with elegant gradient design
+  - App icon extraction for protected apps (Bitwarden, Deezer, TeamSpeak)
+  - BitBlt fallback when PrintWindow fails
+- **Update dialog buttons** - Reduced button height to prevent cutoff at bottom of dialog
+- **Download progress bar** - White text color for better readability on blue background
+
+---
+
 ## [1.8.4-2] - 2025-10-31
 
 ### 🔒 Security
